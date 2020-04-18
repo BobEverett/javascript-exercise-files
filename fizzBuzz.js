@@ -8,14 +8,14 @@ Print the numbers 1 to 100 such that:
 
 
 function fizzBuzz(low, high) {
-    for (let i = low; i <= high; i += 1) {
+    for (let i = low; i <= high; i++) {
         if (((i % 3) === 0) && ((i % 5) === 0)) {
             console.log('FizzBuzz');
         }
-        else if (i % 3 === 0) {
+        else if ((i % 3) === 0) {
             console.log('Fizz');
         }
-        else if (i % 5 === 0) {
+        else if ((i % 5) === 0) {
             console.log('Buzz');
         }
         else {
