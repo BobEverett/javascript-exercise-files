@@ -15,15 +15,18 @@ let fibNum = [];
 let fibTemp = 0;
 
 
-for (let i = 0; fibTemp < 4000000; i++) {
+for (let i = 0;
+  (fibTemp < 4000000); i++) {
   if ((i == 0) || (i == 1)) {
-    fibNum.push(1);
+    fibTemp = 1;
+    fibNum.push(fibTemp);
   }
   else {
     fibTemp = (fibNum[i - 1] + fibNum[i - 2]);
     fibNum.push(fibTemp);
   }
-  if (fibTemp % 2 == 0) {
+  if ((fibTemp % 2) == 0) {
     fibSum += fibTemp
   }
+  console.log(`Term: ${i} \t FibNum: ${fibTemp}\t FibSum: ${fibSum}`)
 }
